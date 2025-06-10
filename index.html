@@ -5,183 +5,214 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Campo e Cidade | Conexões que Nutrem</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <section class="py-20 bg-white section">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 animate-slide-up">Conexão Campo & Cidade</h2>
-                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Conheça as principais iniciativas que conectam o campo e a cidade.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up">
-                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"/>
-                    <h3 class="text-xl font-bold text-primary mb-2">Do Campo à Cidade: O Caminho do Alimento</h3>
-                    <p class="text-gray-600 mb-4">Entenda o trajeto dos alimentos desde a produção rural até sua mesa.</p>
-                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition" href="pagina1.html" target="_blank">Saiba Mais</a>
-                </div>
-                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up">
-                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1602526432604-029a709eae2c"/>
-                    <h3 class="text-xl font-bold text-primary mb-2">Feira Digital: Produtos Rurais para Todos</h3>
-                    <p class="text-gray-600 mb-4">Compre diretamente de agricultores locais com praticidade.</p>
-                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition" href="pagina2.html" target="_blank">Saiba Mais</a>
-                </div>
-                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up">
-                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1564694202779-bc908c327862"/>
-                    <h3 class="text-xl font-bold text-primary mb-2">Tecnologia no Campo e na Cidade</h3>
-                    <p class="text-gray-600 mb-4">Descubra como a tecnologia transforma o setor agroalimentar.</p>
-                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition" href="pagina3.html" target="_blank">Saiba Mais</a>
-                </div>
-                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up">
-                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1524593410523-9b9a8a4ce9c4"/>
-                    <h3 class="text-xl font-bold text-primary mb-2">Histórias que Unem: Agricultores e Consumidores</h3>
-                    <p class="text-gray-600 mb-4">Inspire-se com histórias reais de quem planta e quem consome.</p>
-                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition" href="pagina4.html" target="_blank">Saiba Mais</a>
-                </div>
-                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up">
-                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1544717305-2782549b5136"/>
-                    <h3 class="text-xl font-bold text-primary mb-2">Educação Rural e Urbana: Juntas pelo Futuro</h3>
-                    <p class="text-gray-600 mb-4">Projetos educativos que aproximam diferentes realidades.</p>
-                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition" href="pagina5.html" target="_blank">Saiba Mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<body class="font-sans bg-gray-50 text-gray-800 transition-colors duration-300 ease
+             high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-text">
+
     <div class="fixed right-4 bottom-20 z-50 flex flex-col space-y-3">
-        <button class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition" id="contrastBtn" title="Alto Contraste">
+        <button class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition
+                       high-contrast:bg-high-contrast-primary high-contrast:text-high-contrast-bg high-contrast:shadow-none high-contrast:border high-contrast:border-high-contrast-primary" id="contrastBtn" title="Alto Contraste">
             <i class="fas fa-adjust"></i>
         </button>
-        <button class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition" id="fontSizeBtn" title="Aumentar Fonte">
+        <button class="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition
+                       high-contrast:bg-high-contrast-primary high-contrast:text-high-contrast-bg high-contrast:shadow-none high-contrast:border high-contrast:border-high-contrast-primary" id="fontSizeBtn" title="Aumentar Fonte">
             <i class="fas fa-text-height"></i>
         </button>
     </div>
-    <button class="back-to-top fixed right-4 bottom-4 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-dark transition z-50" id="backToTop">
+
+    <button class="back-to-top fixed right-4 bottom-4 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-dark transition z-50
+                   high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary high-contrast:shadow-none" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </button>
-    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition duration-300" id="navbar">
+
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition duration-300
+                high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none" id="navbar">
         <div class="container mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
                     <img alt="Logo" class="h-10 w-10 rounded-full mr-2" src="https://via.placeholder.com/50x50"/>
-                    <a class="text-xl font-bold text-primary" href="#">Campo &amp; Cidade</a>
+                    <a class="text-xl font-bold text-primary high-contrast:text-high-contrast-primary" href="#">Campo &amp; Cidade</a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a class="menu-item text-gray-700 hover:text-primary font-medium" href="#home">Início</a>
-                    <a class="menu-item text-gray-700 hover:text-primary font-medium" href="#about">Sobre</a>
-                    <a class="menu-item text-gray-700 hover:text-primary font-medium" href="#contact">Contato</a>
+                    <a class="menu-item text-gray-700 hover:text-primary font-medium high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary" href="#home">Início</a>
+                    <a class="menu-item text-gray-700 hover:text-primary font-medium high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary" href="#about">Sobre</a>
+                    <a class="menu-item text-gray-700 hover:text-primary font-medium high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary" href="#contact">Contato</a>
                 </div>
-                <button class="md:hidden text-gray-700 focus:outline-none" id="mobileMenuButton">
+                <button class="md:hidden text-gray-700 focus:outline-none high-contrast:text-high-contrast-text" id="mobileMenuButton">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
-        <div class="md:hidden hidden bg-white shadow-lg" id="mobileMenu">
+        <div class="md:hidden hidden bg-white shadow-lg high-contrast:bg-high-contrast-bg high-contrast:shadow-none high-contrast:border high-contrast:border-high-contrast-text" id="mobileMenu">
             <div class="px-2 pt-2 pb-4 space-y-1">
-                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50" href="#home">Início</a>
-                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50" href="#about">Sobre</a>
-                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50" href="#contact">Contato</a>
+                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50
+                          high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary high-contrast:hover:bg-high-contrast-bg" href="#home">Início</a>
+                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50
+                          high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary high-contrast:hover:bg-high-contrast-bg" href="#about">Sobre</a>
+                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50
+                          high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary high-contrast:hover:bg-high-contrast-bg" href="#contact">Contato</a>
             </div>
         </div>
     </nav>
+
     <section class="pt-24 pb-16 md:pt-32 md:pb-24 min-h-screen flex items-center parallax" id="home" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80')">
         <div class="container mx-auto px-6 text-center fade-in">
             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate-slide-up">Do Campo à Cidade</h1>
-            <h2 class="text-xl md:text-2xl text-secondary font-medium mb-8 animate-slide-up">O Caminho do Alimento</h2>
+            <h2 class="text-xl md:text-2xl text-secondary font-medium mb-8 animate-slide-up high-contrast:text-high-contrast-primary">O Caminho do Alimento</h2>
             <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10 animate-slide-up">Conectando agricultores e consumidores através de uma plataforma que valoriza a produção local e sustentável.</p>
             <div class="flex flex-wrap justify-center gap-4 animate-slide-up">
-                <a class="bg-primary hover:bg-dark text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105" href="#about">Saiba Mais</a>
-                <a class="bg-accent hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105" href="#contact">Participe</a>
+                <a class="bg-primary hover:bg-dark text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary" href="#about">Saiba Mais</a>
+                <a class="bg-accent hover:bg-yellow-500 text-gray-800 font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 high-contrast:bg-high-contrast-primary high-contrast:text-high-contrast-bg" href="#contact">Participe</a>
             </div>
         </div>
     </section>
-    <section class="py-16 bg-white">
+
+    <section class="py-20 bg-white section high-contrast:bg-high-contrast-bg">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Iniciativas</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 animate-slide-up
+                           high-contrast:text-high-contrast-primary">Conexão Campo & Cidade</h2>
                 <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Conheça os pilares do nosso projeto que une o campo e a cidade</p>
+                <p class="text-gray-600 max-w-2xl mx-auto high-contrast:text-high-contrast-text">Conheça as principais iniciativas que conectam o campo e a cidade.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-light p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-primary mb-4">
-                        <i class="fas fa-tractor text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Do Campo à Cidade</h3>
-                    <p class="text-gray-600">O caminho que o alimento percorre desde a produção rural até chegar na sua mesa, valorizando cada etapa.</p>
+                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef"/>
+                    <h3 class="text-xl font-bold text-primary mb-2 high-contrast:text-high-contrast-primary">Do Campo à Cidade: O Caminho do Alimento</h3>
+                    <p class="text-gray-600 mb-4 high-contrast:text-high-contrast-text">Entenda o trajeto dos alimentos desde a produção rural até sua mesa.</p>
+                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary" href="pagina1.html" target="_blank">Saiba Mais</a>
                 </div>
-                <div class="bg-light p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-primary mb-4">
-                        <i class="fas fa-shopping-basket text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Feira Digital</h3>
-                    <p class="text-gray-600">Produtos rurais diretamente do produtor para sua casa, com facilidade e segurança.</p>
+                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1602526432604-029a709eae2c"/>
+                    <h3 class="text-xl font-bold text-primary mb-2 high-contrast:text-high-contrast-primary">Feira Digital: Produtos Rurais para Todos</h3>
+                    <p class="text-gray-600 mb-4 high-contrast:text-high-contrast-text">Compre diretamente de agricultores locais com praticidade.</p>
+                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary" href="pagina2.html" target="_blank">Saiba Mais</a>
                 </div>
-                <div class="bg-light p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-primary mb-4">
-                        <i class="fas fa-microchip text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Tecnologia no Campo</h3>
-                    <p class="text-gray-600">Inovações tecnológicas que aproximam o produtor rural do consumidor urbano.</p>
+                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1564694202779-bc908c327862"/>
+                    <h3 class="text-xl font-bold text-primary mb-2 high-contrast:text-high-contrast-primary">Tecnologia no Campo e na Cidade</h3>
+                    <p class="text-gray-600 mb-4 high-contrast:text-high-contrast-text">Descubra como a tecnologia transforma o setor agroalimentar.</p>
+                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary" href="pagina3.html" target="_blank">Saiba Mais</a>
                 </div>
-                <div class="bg-light p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-primary mb-4">
-                        <i class="fas fa-book-open text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Histórias que Unem</h3>
-                    <p class="text-gray-600">Conheça as pessoas por trás da produção dos alimentos que chegam à sua mesa.</p>
+                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1524593410523-9b9a8a4ce9c4"/>
+                    <h3 class="text-xl font-bold text-primary mb-2 high-contrast:text-high-contrast-primary">Histórias que Unem: Agricultores e Consumidores</h3>
+                    <p class="text-gray-600 mb-4 high-contrast:text-high-contrast-text">Inspire-se com histórias reais de quem planta e quem consome.</p>
+                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary" href="pagina4.html" target="_blank">Saiba Mais</a>
                 </div>
-                <div class="bg-light p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-primary mb-4">
-                        <i class="fas fa-graduation-cap text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Educação Rural</h3>
-                    <p class="text-gray-600">Programas educacionais que fortalecem a conexão entre o campo e a cidade.</p>
-                </div>
-                <div class="bg-light p-8 rounded-lg shadow-md card-hover">
-                    <div class="text-primary mb-4">
-                        <i class="fas fa-seedling text-4xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Sustentabilidade</h3>
-                    <p class="text-600">Práticas agrícolas sustentáveis que beneficiam o produtor, o consumidor e o planeta.</p>
+                <div class="bg-light p-6 rounded-lg shadow-lg card-hover animate-slide-up
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <img class="w-full h-48 object-cover rounded-md mb-4" src="https://images.unsplash.com/photo-1544717305-2782549b5136"/>
+                    <h3 class="text-xl font-bold text-primary mb-2 high-contrast:text-high-contrast-primary">Educação Rural e Urbana: Juntas pelo Futuro</h3>
+                    <p class="text-gray-600 mb-4 high-contrast:text-high-contrast-text">Projetos educativos que aproximam diferentes realidades.</p>
+                    <a class="inline-block mt-auto bg-primary hover:bg-dark text-white font-bold py-2 px-4 rounded-full transition high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary" href="pagina5.html" target="_blank">Saiba Mais</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-gray-50 section" id="about">
+    <section class="py-16 bg-white high-contrast:bg-high-contrast-bg">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center">
-                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
-                    <img alt="About Us" class="rounded-lg shadow-xl w-full h-auto" src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1374&amp;q=80"/>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 high-contrast:text-high-contrast-primary">Iniciativas</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto high-contrast:text-high-contrast-text">Conheça os pilares do nosso projeto que une o campo e a cidade</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-light p-8 rounded-lg shadow-md card-hover
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <div class="text-primary mb-4 high-contrast:text-high-contrast-primary">
+                        <i class="fas fa-tractor text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 high-contrast:text-high-contrast-primary">Do Campo à Cidade</h3>
+                    <p class="text-gray-600 high-contrast:text-high-contrast-text">O caminho que o alimento percorre desde a produção rural até chegar na sua mesa, valorizando cada etapa.</p>
                 </div>
-                <div class="lg:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Quem Somos</h2>
-                    <div class="w-24 h-1 bg-accent mb-6"></div>
-                    <p class="text-gray-600 mb-6">Somos uma plataforma que promove a conexão direta entre agricultores familiares e consumidores urbanos, garantindo alimentos frescos e saudáveis com preço justo para ambos.</p>
-                    <p class="text-gray-600 mb-6">Nosso projeto surgiu da necessidade de reduzir os intermediários na cadeia de alimentos, aproximando quem produz de quem consome, criando relações mais transparentes e sustentáveis.</p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-secondary mr-2 mt-1"></i>
-                            <span class="text-gray-700">Mais de 1000 agricultores cadastrados</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-secondary mr-2 mt-1"></i>
-                            <span class="text-gray-700">5 anos conectando campo e cidade</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-secondary mr-2 mt-1"></i>
-                            <span class="text-gray-700">Impacto positivo em 15 estados brasileiros</span>
-                        </li>
-                    </ul>
-                    <a class="inline-block bg-primary hover:bg-dark text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 shadow-md" href="#">Nossa História</a>
+                <div class="bg-light p-8 rounded-lg shadow-md card-hover
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <div class="text-primary mb-4 high-contrast:text-high-contrast-primary">
+                        <i class="fas fa-shopping-basket text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 high-contrast:text-high-contrast-primary">Feira Digital</h3>
+                    <p class="text-gray-600 high-contrast:text-high-contrast-text">Produtos rurais diretamente do produtor para sua casa, com facilidade e segurança.</p>
+                </div>
+                <div class="bg-light p-8 rounded-lg shadow-md card-hover
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <div class="text-primary mb-4 high-contrast:text-high-contrast-primary">
+                        <i class="fas fa-microchip text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 high-contrast:text-high-contrast-primary">Tecnologia no Campo</h3>
+                    <p class="text-gray-600 high-contrast:text-high-contrast-text">Inovações tecnológicas que aproximam o produtor rural do consumidor urbano.</p>
+                </div>
+                <div class="bg-light p-8 rounded-lg shadow-md card-hover
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <div class="text-primary mb-4 high-contrast:text-high-contrast-primary">
+                        <i class="fas fa-book-open text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 high-contrast:text-high-contrast-primary">Histórias que Unem</h3>
+                    <p class="text-gray-600 high-contrast:text-high-contrast-text">Conheça as pessoas por trás da produção dos alimentos que chegam à sua mesa.</p>
+                </div>
+                <div class="bg-light p-8 rounded-lg shadow-md card-hover
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <div class="text-primary mb-4 high-contrast:text-high-contrast-primary">
+                        <i class="fas fa-graduation-cap text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 high-contrast:text-high-contrast-primary">Educação Rural</h3>
+                    <p class="text-gray-600 high-contrast:text-high-contrast-text">Programas educacionais que fortalecem a conexão entre o campo e a cidade.</p>
+                </div>
+                <div class="bg-light p-8 rounded-lg shadow-md card-hover
+                            high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+                    <div class="text-primary mb-4 high-contrast:text-high-contrast-primary">
+                        <i class="fas fa-seedling text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 high-contrast:text-high-contrast-primary">Sustentabilidade</h3>
+                    <p class="text-gray-600 high-contrast:text-high-contrast-text">Práticas agrícolas sustentáveis que beneficiam o produtor, o consumidor e o planeta.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-16 bg-primary text-white">
+
+    <section class="py-16 bg-gray-50 section high-contrast:bg-high-contrast-bg" id="about">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <img alt="About Us" class="rounded-lg shadow-xl w-full h-auto high-contrast:shadow-none high-contrast:border high-contrast:border-high-contrast-text" src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1374&amp;q=80"/>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 high-contrast:text-high-contrast-primary">Quem Somos</h2>
+                    <div class="w-24 h-1 bg-accent mb-6"></div>
+                    <p class="text-gray-600 mb-6 high-contrast:text-high-contrast-text">Somos uma plataforma que promove a conexão direta entre agricultores familiares e consumidores urbanos, garantindo alimentos frescos e saudáveis com preço justo para ambos.</p>
+                    <p class="text-gray-600 mb-6 high-contrast:text-high-contrast-text">Nosso projeto surgiu da necessidade de reduzir os intermediários na cadeia de alimentos, aproximando quem produz de quem consome, criando relações mais transparentes e sustentáveis.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mr-2 mt-1 high-contrast:text-high-contrast-primary"></i>
+                            <span class="text-gray-700 high-contrast:text-high-contrast-text">Mais de 1000 agricultores cadastrados</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mr-2 mt-1 high-contrast:text-high-contrast-primary"></i>
+                            <span class="text-gray-700 high-contrast:text-high-contrast-text">5 anos conectando campo e cidade</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-secondary mr-2 mt-1 high-contrast:text-high-contrast-primary"></i>
+                            <span class="text-gray-700 high-contrast:text-high-contrast-text">Impacto positivo em 15 estados brasileiros</span>
+                        </li>
+                    </ul>
+                    <a class="inline-block bg-primary hover:bg-dark text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 shadow-md
+                              high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary high-contrast:shadow-none" href="#">Nossa História</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Nessa sessão apresento dados ficticios apenas para fins demonstrativos de um ideal de como seria nosso projeto caso tenha um grande alcance-->
+    <section class="py-16 bg-primary text-white high-contrast:bg-high-contrast-primary high-contrast:text-high-contrast-bg">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div class="p-6">
@@ -203,147 +234,167 @@
             </div>
         </div>
     </section>
-    <section class="py-16 bg-white section">
+
+    <section class="py-16 bg-white section high-contrast:bg-high-contrast-bg">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Quiz: Campo e Cidade</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 high-contrast:text-high-contrast-primary">Quiz: Campo e Cidade</h2>
                 <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Teste seus conhecimentos sobre a conexão entre o campo e a cidade</p>
+                <p class="text-gray-600 max-w-2xl mx-auto high-contrast:text-high-contrast-text">Teste seus conhecimentos sobre a conexão entre o campo e a cidade</p>
             </div>
-            <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md" id="quizContainer">
+            <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md
+                        high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none" id="quizContainer">
                 <div class="mb-8" id="quizQuestion">
-                    <h3 class="text-xl font-bold text-primary mb-4">1. Qual porcentagem da população brasileira vive em áreas urbanas?</h3>
+                    <h3 class="text-xl font-bold text-primary mb-4 high-contrast:text-high-contrast-primary">1. Qual porcentagem da população brasileira vive em áreas urbanas?</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <button class="quiz-option bg-white p-4 rounded-lg border border-gray-200 text-left hover:border-primary transition">Aproximadamente 50%</button>
-                        <button class="quiz-option bg-white p-4 rounded-lg border border-gray-200 text-left hover:border-primary transition">Aproximadamente 75%</button>
-                        <button class="quiz-option bg-white p-4 rounded-lg border border-gray-200 text-left hover:border-primary transition">Aproximadamente 65%</button>
-                        <button class="quiz-option bg-white p-4 rounded-lg border border-gray-200 text-left hover:border-primary transition">Aproximadamente 86%</button>
+                        <button class="quiz-option bg-white p-4 rounded-lg border border-gray-200 text-left hover:border-primary transition
+                                       high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:text-high-contrast-text high-contrast:hover:border-high-contrast-primary">Aproximadamente 50%</button>
+                        <button class="quiz-option bg-white p-4 rounded-lg border border-gray-200 text-left hover:border-primary transition
+                                       high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:text-high-contrast-text high-contrast:hover:border-high-contrast-primary">Aproximadamente 75%</button>
+                        <button class="quiz-option bg-white p-4 rounded-lg border border-gray-200 text-left hover:border-primary transition
+                                       high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:text-high-contrast-text high-contrast:hover:border-high-contrast-primary">Aproximadamente 65%</button>
+                        <button class="quiz-option bg-white p-4 rounded-lg border border-gray-200 text-left hover:border-primary transition
+                                       high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:text-high-contrast-text high-contrast:hover:border-high-contrast-primary">Aproximadamente 86%</button>
                     </div>
                 </div>
                 <div class="flex justify-between items-center">
-                    <span class="text-sm text-gray-500" id="quizProgress">Pergunta 1 de 5</span>
-                    <button class="bg-primary hover:bg-dark text-white font-bold py-2 px-6 rounded-full transition" id="nextQuestion">Próxima</button>
+                    <span class="text-sm text-gray-500 high-contrast:text-high-contrast-text" id="quizProgress">Pergunta 1 de 5</span>
+                    <button class="bg-primary hover:bg-dark text-white font-bold py-2 px-6 rounded-full transition
+                                   high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary" id="nextQuestion">Próxima</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-16 bg-gray-50 section" id="contact">
+
+    <section class="py-16 bg-gray-50 section high-contrast:bg-high-contrast-bg" id="contact">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row">
                 <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Entre em Contato</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 high-contrast:text-high-contrast-primary">Entre em Contato</h2>
                     <div class="w-24 h-1 bg-accent mb-6"></div>
-                    <p class="text-gray-600 mb-6">Quer saber mais sobre nosso projeto? compartilhar suas ideias? Preencha o formulário abaixo.</p>
+                    <p class="text-gray-600 mb-6 high-contrast:text-high-contrast-text">Quer saber mais sobre nosso projeto? compartilhar suas ideias? Preencha o formulário abaixo.</p>
                     <div class="space-y-4 mb-8">
                         <div class="flex items-start">
-                            <i class="fas fa-phone-alt text-secondary text-xl mt-1 mr-3"></i>
-                            <p class="text-gray-700">(42) 98879-1692</p>
+                            <i class="fas fa-phone-alt text-secondary text-xl mt-1 mr-3 high-contrast:text-high-contrast-primary"></i>
+                            <p class="text-gray-700 high-contrast:text-high-contrast-text">(42) 98879-1692</p>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-envelope text-secondary text-xl mt-1 mr-3"></i>
-                            <p class="text-gray-700">airessisaac@gmail.com</p>
+                            <i class="fas fa-envelope text-secondary text-xl mt-1 mr-3 high-contrast:text-high-contrast-primary"></i>
+                            <p class="text-gray-700 high-contrast:text-high-contrast-text">airessisaac@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-6">
-                        <h3 class="text-lg font-semibold text-primary mb-4">Nos siga nas redes sociais</h3>
+                        <h3 class="text-lg font-semibold text-primary mb-4 high-contrast:text-high-contrast-primary">Nos siga nas redes sociais</h3>
                         <div class="flex space-x-4">
-                            <a class="bg-primary text-white p-3 rounded-full hover:bg-dark transition" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="bg-primary text-white p-3 rounded-full hover:bg-dark transition" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="bg-primary text-white p-3 rounded-full hover:bg-dark transition
+                                      high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary high-contrast:shadow-none" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="bg-primary text-white p-3 rounded-full hover:bg-dark transition
+                                      high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary high-contrast:shadow-none" href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="lg:w-1/2">
-                    <form class="bg-white p-8 rounded-lg shadow-md" id="contactForm">
+                        <!--Form sem funcionalidade, apenas demonstrativo, não está enviando para o e-mail, como o avaliado do concurso é apenas html e css, fiz o minimo possivel em js para melhorar intereção com usuario -->
+                    <form class="bg-white p-8 rounded-lg shadow-md
+                                 high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none" id="contactForm">
                         <div class="mb-6">
-                            <label class="block text-gray-700 font-medium mb-2" for="name">Nome completo</label>
-                            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary form-input" id="name" required="" type="text"/>
+                            <label class="block text-gray-700 font-medium mb-2 high-contrast:text-high-contrast-text" for="name">Nome completo</label>
+                            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary form-input
+                                          high-contrast:bg-high-contrast-input-bg high-contrast:text-high-contrast-text high-contrast:border-high-contrast-text high-contrast:focus:ring-high-contrast-primary" id="name" required="" type="text"/>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-gray-700 font-medium mb-2" for="email">E-mail</label>
-                            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary form-input" id="email" required="" type="email"/>
+                            <label class="block text-gray-700 font-medium mb-2 high-contrast:text-high-contrast-text" for="email">E-mail</label>
+                            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary form-input
+                                          high-contrast:bg-high-contrast-input-bg high-contrast:text-high-contrast-text high-contrast:border-high-contrast-text high-contrast:focus:ring-high-contrast-primary" id="email" required="" type="email"/>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-gray-700 font-medium mb-2" for="phone">Telefone</label>
-                            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary form-input" id="phone" type="tel"/>
+                            <label class="block text-gray-700 font-medium mb-2 high-contrast:text-high-contrast-text" for="phone">Telefone</label>
+                            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary form-input
+                                          high-contrast:bg-high-contrast-input-bg high-contrast:text-high-contrast-text high-contrast:border-high-contrast-text high-contrast:focus:ring-high-contrast-primary" id="phone" type="tel"/>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-gray-700 font-medium mb-2" for="message">Mensagem</label>
-                            <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary form-input" id="message" rows="4"></textarea>
+                            <label class="block text-gray-700 font-medium mb-2 high-contrast:text-high-contrast-text" for="message">Mensagem</label>
+                            <textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary form-input
+                                            high-contrast:bg-high-contrast-input-bg high-contrast:text-high-contrast-text high-contrast:border-high-contrast-text high-contrast:focus:ring-high-contrast-primary" id="message" rows="4"></textarea>
                         </div>
                         <div class="mb-6">
-                            <button class="w-full bg-primary hover:bg-dark text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105" type="submit">Enviar Mensagem</button>
+                            <button class="w-full bg-primary hover:bg-dark text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105
+                                           high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary" type="submit">Enviar Mensagem</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-<footer class="bg-primary text-accent py-16">
-    <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
-            <div class="lg:col-span-1 space-y-4">
-                <a href="/" class="text-2xl font-bold text-secondary hover:text-light transition-colors duration-300">Campo &amp; Cidade</a>
-                <p class="text-gray-300 max-w-xs">Conectando o campo à cidade através de relações mais justas e sustentáveis.</p>
-                 <div class="flex space-x-4 pt-2">
-                    <a href="#" aria-label="Acesse nosso Facebook" class="text-gray-300 hover:text-secondary transition-transform duration-300 transform hover:scale-110">
-                        <i class="fab fa-facebook-f fa-lg"></i>
-                    </a>
-                    <a href="#" aria-label="Acesse nosso Instagram" class="text-gray-300 hover:text-secondary transition-transform duration-300 transform hover:scale-110">
-                        <i class="fab fa-instagram fa-lg"></i>
-                    </a>
+    <footer class="bg-primary text-accent py-16 high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-t high-contrast:border-high-contrast-text high-contrast:shadow-none">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1 space-y-4">
+                    <a href="/" class="text-2xl font-bold text-secondary hover:text-light transition-colors duration-300 high-contrast:text-high-contrast-primary high-contrast:hover:text-high-contrast-text">Campo &amp; Cidade</a>
+                    <p class="text-gray-300 max-w-xs high-contrast:text-high-contrast-text">Conectando o campo à cidade através de relações mais justas e sustentáveis.</p>
+                    <div class="flex space-x-4 pt-2">
+                        <a href="#" aria-label="Acesse nosso Facebook" class="text-gray-300 hover:text-secondary transition-transform duration-300 transform hover:scale-110 high-contrast:text-high-contrast-primary high-contrast:hover:text-high-contrast-text">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#" aria-label="Acesse nosso Instagram" class="text-gray-300 hover:text-secondary transition-transform duration-300 transform hover:scale-110 high-contrast:text-high-contrast-primary high-contrast:hover:text-high-contrast-text">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
-                <div>
-                    <h4 class="text-lg font-semibold text-light mb-4">Navegação</h4>
-                    <nav>
+                <div class="lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold text-light mb-4 high-contrast:text-high-contrast-primary">Navegação</h4>
+                        <nav>
+                            <ul class="space-y-3">
+                                <li><a class="text-gray-300 hover:text-secondary transition high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary" href="#">Termos de Uso</a></li>
+                                <li><a class="text-gray-300 hover:text-secondary transition high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary" href="#">Política de Privacidade</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-light mb-4 high-contrast:text-high-contrast-primary">Projetos</h4>
                         <ul class="space-y-3">
-                             <li><a class="text-gray-300 hover:text-secondary transition" href="#">Termos de Uso</a></li>
-                             <li><a class="text-gray-300 hover:text-secondary transition" href="#">Política de Privacidade</a></li>
+                            <li><a class="text-gray-300 hover:text-secondary transition high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary" href="#">Do Campo à Cidade</a></li>
+                            <li><a class="text-gray-300 hover:text-secondary transition high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary" href="#">Feira Digital</a></li>
+                            <li><a class="text-gray-300 hover:text-secondary transition high-contrast:text-high-contrast-text high-contrast:hover:text-high-contrast-primary" href="#">Tecnologia no Campo</a></li>
                         </ul>
-                    </nav>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-light mb-4">Projetos</h4>
-                    <ul class="space-y-3">
-                        <li><a class="text-gray-300 hover:text-secondary transition" href="#">Do Campo à Cidade</a></li>
-                        <li><a class="text-gray-300 hover:text-secondary transition" href="#">Feira Digital</a></li>
-                        <li><a class="text-gray-300 hover:text-secondary transition" href="#">Tecnologia no Campo</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-light mb-4">Contato</h4>
-                    <address class="not-italic text-gray-300 space-y-3">
-                        <p>airessisaac@gmail.com</p>
-                        <p>(42) 98879-1692</p>
-                    </address>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-light mb-4 high-contrast:text-high-contrast-primary">Contato</h4>
+                        <address class="not-italic text-gray-300 space-y-3 high-contrast:text-high-contrast-text">
+                            <p>airessisaac@gmail.com</p>
+                            <p>(42) 98879-1692</p>
+                        </address>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
-            <p class="mb-4 sm:mb-0">© 2025 Campo &amp; Cidade. Todos os direitos reservados.</p>
-            <div class="flex space-x-6">
-                <a class="hover:text-secondary transition" href="#">Atruibuições</a>
-            </div>
-        </div>
-    </div>
-</footer>
-    <div class="fixed inset-0 flex items-center justify-center z-50 hidden bg-black bg-opacity-50" id="successModal">
-        <div class="bg-white p-8 rounded-lg shadow-xl max-w-md mx-4">
-            <div class="text-center">
-                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-check-circle text-green-500 text-3xl"></i>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400 high-contrast:border-high-contrast-text high-contrast:text-high-contrast-text">
+                <p class="mb-4 sm:mb-0">© 2025 Campo &amp; Cidade. Todos os direitos reservados.</p>
+                <div class="flex space-x-6">
+                    <a class="hover:text-secondary transition high-contrast:hover:text-high-contrast-primary" href="#">Atribuições</a>
                 </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Mensagem Enviada!</h3>
-                <p class="text-gray-600 mb-6">Obrigado por entrar em contato conosco. Retornaremos o mais breve possível.</p>
-                <button class="bg-primary hover:bg-dark text-white font-bold py-2 px-6 rounded-full transition" id="closeModal">Fechar</button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed inset-0 flex items-center justify-center z-50 hidden bg-black bg-opacity-50" id="successModal">
+        <div class="bg-white p-8 rounded-lg shadow-xl max-w-md mx-4
+                    high-contrast:bg-high-contrast-bg high-contrast:border high-contrast:border-high-contrast-text high-contrast:shadow-none">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 high-contrast:bg-high-contrast-input-bg high-contrast:border high-contrast:border-high-contrast-primary">
+                    <i class="fas fa-check-circle text-green-500 text-3xl high-contrast:text-high-contrast-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2 high-contrast:text-high-contrast-primary">Mensagem Enviada!</h3>
+                <p class="text-gray-600 mb-6 high-contrast:text-high-contrast-text">Obrigado por entrar em contato conosco. Retornaremos o mais breve possível.</p>
+                <button class="bg-primary hover:bg-dark text-white font-bold py-2 px-6 rounded-full transition
+                               high-contrast:bg-high-contrast-bg high-contrast:text-high-contrast-primary high-contrast:border-2 high-contrast:border-high-contrast-primary" id="closeModal">Fechar</button>
             </div>
         </div>
     </div>
-    <script src="assets/js/tailwind-config.js"></script>
+
     <script src="assets/js/script.js"></script>
     <script src="assets/js/vlibras.js"></script>
 </body>
