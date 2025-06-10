@@ -6,37 +6,7 @@
     <title>Campo e Cidade | Conexões que Nutrem</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#4CAF50',
-                        secondary: '#8BC34A',
-                        accent: '#FFC107',
-                        dark: '#388E3C',
-                        light: '#DCEDC8',
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 1s ease-in-out',
-                        'slide-up': 'slideUp 0.8s ease-out',
-                        'pulse-slow': 'pulse 3s infinite',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        },
-                        slideUp: {
-                            '0%': { transform: 'translateY(30px)', opacity: '0' },
-                            '100%': { transform: 'translateY(0)', opacity: '1' }
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
     <section class="py-20 bg-white section">
@@ -308,50 +278,59 @@
             </div>
         </div>
     </section>
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+<footer class="bg-primary text-accent py-16">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+            <div class="lg:col-span-1 space-y-4">
+                <a href="/" class="text-2xl font-bold text-secondary hover:text-light transition-colors duration-300">Campo &amp; Cidade</a>
+                <p class="text-gray-300 max-w-xs">Conectando o campo à cidade através de relações mais justas e sustentáveis.</p>
+                 <div class="flex space-x-4 pt-2">
+                    <a href="#" aria-label="Acesse nosso Facebook" class="text-gray-300 hover:text-secondary transition-transform duration-300 transform hover:scale-110">
+                        <i class="fab fa-facebook-f fa-lg"></i>
+                    </a>
+                    <a href="#" aria-label="Acesse nosso Instagram" class="text-gray-300 hover:text-secondary transition-transform duration-300 transform hover:scale-110">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold text-primary mb-4">Campo &amp; Cidade</h3>
-                    <p class="text-gray-300 mb-4">Conectando o campo à cidade através de relações mais justas e sustentáveis.</p>
-                    <div class="flex space-x-4">
-                        <a class="text-gray-300 hover:text-primary transition" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="text-gray-300 hover:text-primary transition" href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <h4 class="text-lg font-semibold text-light mb-4">Navegação</h4>
+                    <nav>
+                        <ul class="space-y-3">
+                             <li><a class="text-gray-300 hover:text-secondary transition" href="#">Termos de Uso</a></li>
+                             <li><a class="text-gray-300 hover:text-secondary transition" href="#">Política de Privacidade</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Links Úteis</h4>
-                    <ul class="space-y-2">
-                        <li><a class="text-gray-300 hover:text-primary transition" href="#">Termos de Uso</a></li>
-                        <li><a class="text-gray-300 hover:text-primary transition" href="#">Política de Privacidade</a></li>
+                    <h4 class="text-lg font-semibold text-light mb-4">Projetos</h4>
+                    <ul class="space-y-3">
+                        <li><a class="text-gray-300 hover:text-secondary transition" href="#">Do Campo à Cidade</a></li>
+                        <li><a class="text-gray-300 hover:text-secondary transition" href="#">Feira Digital</a></li>
+                        <li><a class="text-gray-300 hover:text-secondary transition" href="#">Tecnologia no Campo</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Projetos</h4>
-                    <ul class="space-y-2">
-                        <li><a class="text-gray-300 hover:text-primary transition" href="#">Do Campo à Cidade: O Caminho do Alimento</a></li>
-                        <li><a class="text-gray-300 hover:text-primary transition" href="#">Feira Digital: Produtos Rurais para Todos</a></li>
-                        <li><a class="text-gray-300 hover:text-primary transition" href="#">Tecnologia no Campo e na Cidade</a></li>
-                        <li><a class="text-gray-300 hover:text-primary transition" href="#">Histórias que Unem: Agricultores e Consumidores</a></li>
-                        <li><a class="text-gray-300 hover:text-primary transition" href="#">Educação Rural e Urbana: Juntas pelo Futuro</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contato</h4>
-                    <address class="not-italic text-gray-300">
-                        <p class="mb-2">airessisaac@gmail.com</p>
+                    <h4 class="text-lg font-semibold text-light mb-4">Contato</h4>
+                    <address class="not-italic text-gray-300 space-y-3">
+                        <p>airessisaac@gmail.com</p>
                         <p>(42) 98879-1692</p>
                     </address>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Campo &amp; Cidade. Todos os direitos reservados.</p>
-                <div class="flex space-x-6">
-                    <a class="text-gray-400 hover:text-primary transition" href="#">Acessibilidade</a>
-                </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
+            <p class="mb-4 sm:mb-0">© 2025 Campo &amp; Cidade. Todos os direitos reservados.</p>
+            <div class="flex space-x-6">
+                <a class="hover:text-secondary transition" href="#">Atruibuições</a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
     <div class="fixed inset-0 flex items-center justify-center z-50 hidden bg-black bg-opacity-50" id="successModal">
         <div class="bg-white p-8 rounded-lg shadow-xl max-w-md mx-4">
             <div class="text-center">
@@ -364,7 +343,8 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
-    <script src="vlibras.js"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/vlibras.js"></script>
 </body>
 </html>

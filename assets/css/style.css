@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Estilos de base e temas */
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tema de Alto Contraste */
+body.high-contrast {
+    background: #000;
+    color: #fff;
+}
+body.high-contrast .bg-white,
+body.high-contrast .bg-accent,
+body.high-contrast .bg-gray-50 {
+    background: #000;
+}
+body.high-contrast .text-gray-800,
+body.high-contrast .text-gray-700,
+body.high-contrast .text-gray-600 {
+    color: #fff;
+}
+body.high-contrast .text-primary {
+    color: #FFEB3B; /* Amarelo vivo para destaque */
+}
+body.high-contrast .bg-primary {
+    background: #000;
+    color: #FFEB3B;
+    border: 2px solid #FFEB3B;
+}
+body.high-contrast .bg-secondary {
+    background: #FFEB3B;
+    color: #000;
+}
+body.high-contrast nav,
+body.high-contrast footer,
+body.high-contrast form,
+body.high-contrast .shadow-lg {
+    border: 1px solid #fff;
+    box-shadow: none;
+}
+body.high-contrast .form-input {
+    background: #222;
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Efeito Parallax */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Animação da Seção (JS dependente) */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo do Item de Menu */
+.menu-item {
+    position: relative;
+    padding-bottom: 5px;
+}
+.menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* Cor definida via JS ou pode ser hardcoded:
+       ex: background-color: #A7C957; */
+    background-color: var(--color-secondary, #A7C957);
+    transition: width 0.3s ease-in-out;
+}
+.menu-item:hover::after {
+    width: 100%;
+}
+
+/* Botão "Voltar ao Topo" (JS dependente) */
+.back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+}
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Foco customizado para formulários */
+.form-input:focus {
+    box-shadow: 0 0 0 3px rgba(167, 201, 87, 0.5); /* Sombra com cor secondary */
+}
+
+/* Ajuste do Parallax para mobile */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
