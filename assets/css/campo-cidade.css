@@ -1,0 +1,32 @@
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.card-hover {
+    transition: all 0.3s ease;
+}
+.form-input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+}
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+.animate-pulse-slow {
+    animation: pulse 3s infinite;
+}
+.rotate-45 {
+    transform: rotate(45deg);
+}
+#mobileMenu {
+    transition: all 0.3s ease;
+}

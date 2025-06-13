@@ -1,0 +1,109 @@
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulseSlow {
+    0% { opacity: 0.9; }
+    50% { opacity: 1; }
+    100% { opacity: 0.9; }
+}
+
+.animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.animate-pulse-slow {
+    animation: pulseSlow 3s infinite;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* High Contrast Mode */
+.high-contrast body {
+    background-color: black !important;
+    color: white !important;
+}
+
+.high-contrast .text-gray-800,
+.high-contrast .text-gray-700,
+.high-contrast .text-gray-600,
+.high-contrast .text-gray-500 {
+    color: white !important;
+}
+
+.high-contrast .bg-white,
+.high-contrast .bg-gray-50,
+.high-contrast .bg-gray-100 {
+    background-color: black !important;
+}
+
+.high-contrast .text-green-600,
+.high-contrast .text-yellow-400,
+.high-contrast .text-yellow-500,
+.high-contrast .text-yellow-100,
+.high-contrast .text-green-300 {
+    color: yellow !important;
+}
+
+.high-contrast .bg-green-600,
+.high-contrast .bg-yellow-400,
+.high-contrast .bg-gray-800,
+.high-contrast .bg-green-100 {
+    background-color: #333 !important; /* Darker background for contrast elements */
+    border-color: yellow !important;
+}
+
+.high-contrast .hover\:bg-green-700:hover,
+.high-contrast .hover\:bg-yellow-500:hover,
+.high-contrast .hover\:bg-gray-700:hover {
+    background-color: #555 !important;
+}
+
+.high-contrast .shadow-lg,
+.high-contrast .shadow-md,
+.high-contrast .shadow-xl {
+    box-shadow: none !important;
+    border: 1px solid white !important;
+}
+
+.high-contrast .border-gray-200,
+.high-contrast .border-gray-300,
+.high-contrast .border-green-500 {
+    border-color: white !important;
+}
+
+.high-contrast .focus\:ring-green-600:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 0, 0.5) !important;
+}
+
+/* Ensure icons are visible */
+.high-contrast .fas,
+.high-contrast .fab {
+    color: yellow !important;
+}
+
+/* Ensure base font-size is controlled by JS */
+html {
+    font-size: 16px; 
+}

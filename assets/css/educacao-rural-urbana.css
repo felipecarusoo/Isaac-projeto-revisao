@@ -1,0 +1,83 @@
+.card-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.form-input:focus {
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.high-contrast {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+.high-contrast * {
+    background-color: #000 !important;
+    color: #FF0 !important;
+}
+/* Revert specific elements back to original high contrast intention */
+.high-contrast .bg-gray-50,
+.high-contrast .bg-white,
+.high-contrast .bg-light,
+.high-contrast .bg-gray-800 {
+    background-color: #000 !important;
+}
+
+.high-contrast .text-primary,
+.high-contrast .text-secondary,
+.high-contrast .text-accent,
+.high-contrast .text-dark,
+.high-contrast .text-light,
+.high-contrast .text-gray-800,
+.high-contrast .text-gray-700,
+.high-contrast .text-gray-600,
+.high-contrast .text-gray-500,
+.high-contrast .text-gray-400,
+.high-contrast .text-gray-300 {
+    color: #FF0 !important;
+}
+
+/* Ensure buttons and links are visible */
+.high-contrast .bg-primary,
+.high-contrast .bg-accent,
+.high-contrast .bg-dark,
+.high-contrast .bg-gray-800 {
+    background-color: #008000 !important; /* A distinct color for interactive elements */
+    color: #000 !important;
+}
+
+.high-contrast a,
+.high-contrast button {
+    filter: invert(100%) hue-rotate(180deg) saturate(200%) brightness(150%);
+}
+
+.high-contrast .fa-adjust,
+.high-contrast .fa-text-height,
+.high-contrast .fa-bars,
+.high-contrast .fa-arrow-up,
+.high-contrast .fa-phone-alt,
+.high-contrast .fa-envelope,
+.high-contrast .fa-facebook-f,
+.high-contrast .fa-instagram,
+.high-contrast .fa-youtube,
+.high-contrast .fa-check-circle,
+.high-contrast .fa-exchange-alt,
+.high-contrast .fa-laptop,
+.high-contrast .fa-seedling,
+.high-contrast .fa-book,
+.high-contrast .fa-chalkboard-teacher,
+.high-contrast .fa-globe-americas {
+    color: #FF0 !important; /* Icons should also be high-contrast */
+}
+
+/* Explicitly set font sizes to ensure they are toggleable by JS */
+html {
+    font-size: 100%; /* Base font size for 1rem */
+}
